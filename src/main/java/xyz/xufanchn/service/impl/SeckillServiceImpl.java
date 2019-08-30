@@ -60,7 +60,7 @@ public class SeckillServiceImpl implements SeckillService {
             seckill = seckillDao.queryById(seckillId);
             if (seckill == null) {
                 return new Exposer(false, seckillId);
-            }else {
+            } else {
                 //3:放入redis
                 redisDao.putSeckill(seckill);
             }
@@ -106,20 +106,20 @@ public class SeckillServiceImpl implements SeckillService {
         Date nowDate = new Date();
 
         try {
-            //减库存
-            int updateCount = seckillDao.reduceNumber(seckillId, nowDate);
-            if (updateCount <= 0) {
-                //没有更新到记录，秒杀结束
-                throw new SeckillCloseException("秒杀结束");
+            //记录购买行为
+            int insertCount = successKilledDao.insertSuccessKilled(seckillId, userPhone);
+            //唯一验证：seckillId,userPhone
+            if (insertCount <= 0) {
+                //重复秒杀
+                throw new RepeatKillException("重复秒杀");
             } else {
-                //记录购买行为
-                int insertCount = successKilledDao.insertSuccessKilled(seckillId, userPhone);
-                //唯一验证：seckillId,userPhone
-                if (insertCount <= 0) {
-                    //重复秒杀
-                    throw new RepeatKillException("重复秒杀");
+                //减库存,热点商品竞争
+                int updateCount = seckillDao.reduceNumber(seckillId, nowDate);
+                if (updateCount <= 0) {
+                    //没有更新到记录，秒杀结束,rollback
+                    throw new SeckillCloseException("秒杀结束");
                 } else {
-                    //秒杀成功
+                    //秒杀成功,commit
                     SuccessKilled successKilled = successKilledDao.queryByIdWithSeckill(seckillId, userPhone);
                     return new SeckillExecution(seckillId, SeckillStateEnum.SUCCESS, successKilled);
                 }
@@ -133,5 +133,10 @@ public class SeckillServiceImpl implements SeckillService {
             //所有编译期异常转换为运行期异常
             throw new SeckillException("seckill inner error:" + e.getMessage());
         }
+    }
+
+    @Override
+    public SeckillExecution executeSeckillProcedure(long seckillId, long userPhone, String md5) throws SeckillException, RepeatKillException, SeckillCloseException {
+        return null; //todo
     }
 }

@@ -6,7 +6,13 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9b0bb36-efcc-40b8-8970-d8d58bb19c5c" name="Default Changelist" comment="" />
+    <list default="true" id="f9b0bb36-efcc-40b8-8970-d8d58bb19c5c" name="Default Changelist" comment="添加秒杀执行存储过程sql">
+      <change afterPath="$PROJECT_DIR$/src/main/sql/seckill.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/xufanchn/service/SeckillService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/xufanchn/service/SeckillService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/xufanchn/service/impl/SeckillServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/xufanchn/service/impl/SeckillServiceImpl.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +78,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -103,6 +112,7 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectId" id="1Pff0P51msjkDaVk47Ab5xHzCNW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -289,9 +299,9 @@
     <list>
       <item itemvalue="JUnit.SeckillServiceTest.testSeckillLogic" />
       <item itemvalue="JUnit.SuccessKilledDaoTest" />
-      <item itemvalue="Tomcat Server.list.jsp" />
       <item itemvalue="JUnit.RedisDaoTest.testSeckill" />
       <item itemvalue="JUnit.RedisDaoTest" />
+      <item itemvalue="Tomcat Server.list.jsp" />
     </list>
     <recent_temporary>
       <list>
@@ -307,22 +317,7 @@
     <option name="allServicesViewState">
       <serviceView>
         <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@a66fe9b0" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@a66fe9b0" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@2700b5f4" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@a66fe9b0" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@240c3ab" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-          </expand>
+          <expand />
           <select />
         </treeState>
       </serviceView>
@@ -368,12 +363,30 @@
       <workItem from="1566894787971" duration="7267000" />
       <workItem from="1566905517376" duration="5298000" />
       <workItem from="1566964826500" duration="599000" />
-      <workItem from="1567071816525" duration="7400000" />
+      <workItem from="1567071816525" duration="8112000" />
+      <workItem from="1567131957737" duration="6080000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="添加秒杀执行存储过程sql" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加秒杀执行存储过程sql" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ssm2$SeckillServiceTest.ic" NAME="SeckillServiceTest Coverage Results" MODIFIED="1566635985862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
