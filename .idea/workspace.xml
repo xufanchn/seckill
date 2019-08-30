@@ -6,13 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9b0bb36-efcc-40b8-8970-d8d58bb19c5c" name="Default Changelist" comment="添加秒杀执行存储过程sql">
-      <change afterPath="$PROJECT_DIR$/src/main/sql/seckill.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/xufanchn/service/SeckillService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/xufanchn/service/SeckillService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/xufanchn/service/impl/SeckillServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/xufanchn/service/impl/SeckillServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="f9b0bb36-efcc-40b8-8970-d8d58bb19c5c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -364,8 +358,16 @@
       <workItem from="1566905517376" duration="5298000" />
       <workItem from="1566964826500" duration="599000" />
       <workItem from="1567071816525" duration="8112000" />
-      <workItem from="1567131957737" duration="6080000" />
+      <workItem from="1567131957737" duration="6329000" />
     </task>
+    <task id="LOCAL-00001" summary="添加秒杀执行存储过程">
+      <created>1567140648560</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1567140648560</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,7 +388,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="添加秒杀执行存储过程sql" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加秒杀执行存储过程sql" />
+    <MESSAGE value="添加秒杀执行存储过程" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加秒杀执行存储过程" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ssm2$SeckillServiceTest.ic" NAME="SeckillServiceTest Coverage Results" MODIFIED="1566635985862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
